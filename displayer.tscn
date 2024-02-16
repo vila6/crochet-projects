@@ -20,7 +20,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5lp07")
-images = Array[CompressedTexture2D]([ExtResource("2_sch26"), ExtResource("3_aykqf"), ExtResource("2_ltss0"), ExtResource("5_jnmc4"), ExtResource("6_hmhcb"), ExtResource("3_chuu5"), ExtResource("8_vgsiy"), ExtResource("9_3lkqx")])
+images = Array[CompressedTexture2D]([ExtResource("3_chuu5"), ExtResource("2_ltss0"), ExtResource("8_vgsiy"), ExtResource("3_aykqf"), ExtResource("5_jnmc4"), ExtResource("2_sch26"), ExtResource("9_3lkqx"), ExtResource("6_hmhcb")])
 
 [node name="Left Button" type="Button" parent="."]
 layout_mode = 0
@@ -46,5 +46,5 @@ texture = ExtResource("3_63xff")
 expand_mode = 2
 stretch_mode = 5
 
-[connection signal="pressed" from="Left Button" to="." method="change_image" binds= [-1]]
-[connection signal="pressed" from="Right Button" to="." method="change_image" binds= [1]]
+[connection signal="pressed" from="Left Button" to="." method="change_image" binds= [1]]
+[connection signal="pressed" from="Right Button" to="." method="change_image" binds= [-1]]
